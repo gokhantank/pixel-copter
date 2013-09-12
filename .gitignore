@@ -1,7 +1,5 @@
 # Zend #
 ######################
-deploy/data/*
-deploy/deploy/data/*
 
 
 # NPM #
@@ -16,8 +14,6 @@ deploy/public/assets/css/*.css
 
 # JS #
 ######################
-deploy/public/assets/js/main.min.js
-deploy/deploy/public/assets/js/main.min.js
 
 
 # SASS #
