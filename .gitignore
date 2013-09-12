@@ -1,0 +1,38 @@
+# Zend #
+######################
+deploy/data/*
+deploy/deploy/data/*
+
+
+# NPM #
+######################
+npm-debug.log
+node_modules
+
+
+# CSS #
+######################
+deploy/public/assets/css/*.css
+
+# JS #
+######################
+deploy/public/assets/js/main.min.js
+deploy/deploy/public/assets/js/main.min.js
+
+
+# SASS #
+######################
+.sass-cache/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.dba
+Thumbs.db
+*.swp
+*.swo
