@@ -3,4 +3,4 @@ pixel-copter
 My game for js13kGames competition (http://js13kgames.com).
 
 The Control:
-To navigate through, press or hold space bar to add thrust your pixel-copter and don't forget to get out of fuel with collecting fuel powerups. That's all you need to do.
+To navigate through, watch out for the tricky gravity with pressing space bar to add thrust to your pixel-copter and release it before hitting the top. Collect the fuel power-ups for your pixel-copter petrol. That's all you need to do.

@@ -55,6 +55,19 @@
             [29-32, 22-32],
             ];
 
+            /*
+             *BODY: x, y , angle(rotate) etc.
+            * If you give an entity a body it can take physical form in the world,
+            * although to see it you will need a view.
+            *
+            *VIEW: sprite and its alpha, scale, color etc. and set the Body's x,y,angle variables
+            * View is display component which renders an Entity using the standard display list.
+             *
+             *PHYSICS: mr, mx, my, speed-> writes the Body's x,y,angle variables so that view can read
+              * Provides a basic physics step without collision detection.
+             * Extend to add collision handling.
+            */
+
             this.body = this.getBody();
             this.body = new HelicopterGame.Body(this);
             this.body.x = 280;
@@ -151,11 +164,18 @@
 
         render: function()
         {
+            /*--o render - UPDATE VIEW
+            Applying the new body variable to our view to draw the sprite on the context;
+            */
             this.view.spritePainter.paint(this.view.sprite, context);
         },
 
         update: function()
         {
+            /*--o update -  UPDATE BODY
+            Applying the new physical changes to our body
+            */
+
             if(!this.isPlaying) return;
 
             this.gamePad.checkInput();
