@@ -35,7 +35,6 @@ var Game = Class.extend({
 
         that.update();
         that.render();
-
         requestAnimationFrame(that.loop);
     },
 
@@ -66,7 +65,6 @@ var Game = Class.extend({
 
         if ( !that.isPaused ){
             HelicopterGame.UI.displayFuel(true);
-            console.log('HelicopterGame.UI.fuel: '+HelicopterGame.UI.getFuel());
             if(HelicopterGame.UI.getFuel()<1) this._helicopter.endFuel();
         }
 

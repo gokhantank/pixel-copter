@@ -160,6 +160,7 @@
             this.view.spritePainter.paint(this.view.sprite, context);
 
             this.gamePad = new HelicopterGame.GamePad();
+
         },
 
         render: function()
@@ -181,9 +182,10 @@
             this.gamePad.checkInput();
 
             // y coordinate
-            if (this.gamePad.keys[4] && this.hasFuel) {
+            if (this.gamePad.isKeyPressed('SPACE') && this.hasFuel) {
                 this.physics.my -= this.physics.thrust;
             }
+
             this.physics.my += this.physics.gravity;
 
             // rotation
